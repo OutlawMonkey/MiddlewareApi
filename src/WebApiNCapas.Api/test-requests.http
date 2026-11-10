@@ -1,0 +1,38 @@
+### ===============================================================
+### Pruebas de la API de Productos (Archivo .http para VS Code)
+### ===============================================================
+@baseUrl = http://localhost:5000
+
+### 1. Obtener todos los productos
+GET {{baseUrl}}/api/productos
+Accept: application/json
+
+### 2. Obtener un producto por Id (Ejemplo: Id 1)
+GET {{baseUrl}}/api/productos/1
+Accept: application/json
+
+### 3. Crear un nuevo producto
+POST {{baseUrl}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Regla Metálica 30cm",
+  "descripcion": "Regla de acero inoxidable graduada en mm y pulgadas",
+  "precio": 45.00,
+  "stock": 25
+}
+
+### 4. Actualizar un producto existente (Ejemplo: Id 1)
+PUT {{baseUrl}}/api/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "Cuaderno Profesional Actualizado",
+  "descripcion": "Cuaderno cuadro grande 100 hojas pasta dura",
+  "precio": 42.50,
+  "stock": 45
+}
+
+### 5. Eliminar un producto por Id
+DELETE {{baseUrl}}/api/productos/4
+Accept: application/json

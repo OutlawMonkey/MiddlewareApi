@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WebApiNCapas.Api/WebApiNCapas.Api.csproj" />
+    <Project Path="src/WebApiNCapas.Business/WebApiNCapas.Business.csproj" />
+    <Project Path="src/WebApiNCapas.Data/WebApiNCapas.Data.csproj" />
+    <Project Path="src/WebApiNCapas.Entities/WebApiNCapas.Entities.csproj" />
+  </Folder>
+</Solution>
